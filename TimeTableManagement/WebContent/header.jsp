@@ -12,13 +12,40 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg" style="background-color:#041E54;">
+	<!--  <nav class="navbar navbar-expand-lg" style="background-color:#041E54;">
   <a class="navbar-brand" href="index.jsp"><img src="img/logo.jpg" style="width:70px; height:60px;"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
+   
     <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.jsp" style="color:white">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.jsp" style="color:white">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.jsp" style="color:white">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="adminLogin.jsp" style="color:white">Login</a>
+      </li>
+        
+    </ul>
+    <a href="view.jsp" class="btn btn-warning navbar-btn float-right">View Time Table</a>
+  </div>
+</nav>
+-->
+<nav class="navbar navbar-expand-lg" style="background-color:#041E54;">
+  <a class="navbar-brand" href="index.jsp"><img src="img/logo.jpg" style="width:70px; height:60px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="index.jsp" style="color:white">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -34,8 +61,12 @@
       
       
     </ul>
+    <form id="content" class="form-inline my-2 my-lg-0" onclik="view()">
+      
+      <button type="button" class= my-2 my-sm-2" onclick="window.location.href='view.jsp'">View Time Table</button>
+    </form>
   </div>
 </nav>
 
 </body>
-</html>
+</html> 

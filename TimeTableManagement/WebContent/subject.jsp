@@ -6,34 +6,53 @@
 <meta charset="ISO-8859-1">
 <title>College | TimeTable</title>
 </head>
-<body>
+<body style="background-color:#e6ffe6">
 <%@ include file ="header.jsp" %>
 </br>
 
-<divclass="row>
-<div class="container">
+<div class="row">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+	<div class="container">
 <h3>Add Subject Details</h3>
-<form>
+<form name="subject" onsubmit="return validate()">
   <div class="form-group">
     <label for="exampleInputEmail1">Subject ID</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+    <input type="text" class="form-control" name="subId">
     
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Subject Name</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+    <input type="text" class="form-control" name="subName">
   </div>
   
   <button type="submit" class="btn btn-secondary">Submit</button>
 </form>
 </div>
 </div>
-
+<div class="col-sm-3"></div>
 </div>
+
+
 </br>
 </br>
 </br>
 </br>
+<script>
+function validate(){
+	if(document.subject.subId.value==""){
+		alert("please enter the subject id");
+		return false;
+	}
+	if(document.subject.subName.value==""){
+		alert("please enter the subject name");
+		return false;
+	}
+	return true;
+	
+}
+
+</script>
 <%@ include file ="footer.jsp" %>
 </body>
 </html>

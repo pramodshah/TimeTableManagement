@@ -10,7 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-color:#e6ffe6">
 <%@ include file ="header.jsp" %>
 	<!-- Contact Section -->
 	<section id="contact">
@@ -26,7 +26,10 @@
 				<div class="col-lg-12">
 					<form name="sentMessage" id="contactForm" novalidate>
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-3">
+								
+							</div>
+							<div class="col-sm-6">
 								<div class="form-group">
 									<input type="text" class="form-control"
 										placeholder="Your Name *" id="name" required
@@ -45,8 +48,6 @@
 										data-validation-required-message="Please enter your phone number.">
 									<p class="help-block text-danger"></p>
 								</div>
-							</div>
-							<div class="col-md-6">
 								<div class="form-group">
 									<textarea class="form-control" placeholder="Your Message *"
 										id="message" required
@@ -54,8 +55,12 @@
 									<p class="help-block text-danger"></p>
 								</div>
 							</div>
+							<div class="col-sm-3"></div>
+							
+							
+							
 							<div class="clearfix"></div>
-							<div class="col-lg-12 text-center">
+							<div class="col-md-12 text-center">
 								<div id="success"></div>
 								<button type="submit" class="btn btn-xl">Send Message</button>
 							</div>

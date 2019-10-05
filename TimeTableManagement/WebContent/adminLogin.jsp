@@ -11,7 +11,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color:#e6ffe6">
 <%@ include file ="header.jsp" %>
 <div class=fluid-container>
 		<br />
@@ -19,12 +19,12 @@
 		<br />
 </div>
 <div class=row>
-		<div class="col-sm-1"></div>
-
-		<div class="container col-sm-4 ">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+<div class="container">
 			<div class=jumbotron>
 				<h2 class=page-header>Login</h2>
-				<form role="form" action="main" method=post>
+				<form name="login" role="form" action="adminPage.jsp" method=post onsubmit="return validate()">
 					<div class="form-group">
 						<label for="un">Username:</label> <input type="text"
 							class="form-control" id="un" name=username>
@@ -33,53 +33,37 @@
 						<label for="pwd">Password:</label> <input type="password"
 							class="form-control" id="pwd" name=password>
 					</div>
-					<div class="checkbox">
-						<label><input type="checkbox"> Remember me</label>
-					</div>
-					<a class="btn btn-secondary" href="adminPage.jsp" padding:"10" role="button">Login</a>
+					
+					<button class="btn btn-secondary"  role="button">Login</button>
+					<a  href="register.jsp" padding:"10" style="color:green; padding-left:20px;">Register</a>
 				</form>
 			</div>
 		</div>
+</div>
+  <div class="col-sm-3"></div>
+  
 
-		<div class="col-sm-1"></div>
-		<div class="container col-sm-5">
-			<div class=jumbotron>
-				<h2 class=page-header>Register</h2>
-				<form role="form" action=register method=post>
-					<div class="form-group">
-						<label for="un">Username:</label> <input type="text"
-							class="form-control" id="un" name=username>
-					</div>
-
-					<div class="form-group">
-						<label for="email">Email address:</label> <input type="email"
-							class="form-control" id="email" name=email>
-					</div>
-
-					<div class="form-group">
-						<label for="pwd">Password:</label> <input type="password"
-							class="form-control" id="pwd" name=password>
-					</div>
-
-					<div class="form-group">
-						<label for="cpwd">Confirm Password:</label> <input type="password"
-							class="form-control" id="pwd" name=confirm>
-					</div>
-
-
-					<button type="submit" class="btn btn-primary">Register</button>
-				</form>
-			</div>
-		</div>
-
-
-		<div class="col-sm-1"></div>
+		
 	</div>
 </div>
 </br>
 </br>
 </br>
 </br>
+<script>
+function validate(){
+	if(document.login.username.value==""){
+		alert("please enter username!")
+		return false;
+	}
+	else if(document.login.password.value==""){
+		alert("please enter password!")
+		return false;
+	}
+	return true;
+}
+
+</script>
 <%@ include file ="footer.jsp" %>
 </body>
 </html>

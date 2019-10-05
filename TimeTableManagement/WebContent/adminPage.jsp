@@ -10,29 +10,28 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<style>
-body, html {
-  background-image: url("img/col.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-</style>
-<body>
+<body style="background-color:#e6ffe6">
 <%@ include file ="header.jsp" %>
-<div class=fluid-container>
-		<br />
-		<br />
-</div>
-  
-	<a class="btn btn-secondary" href="course.jsp" padding:"10" role="button">Add Courses</a>
+</br>
+</br>
+</br>
+
+ <div class="row">
+ <div class="container">
+ 	<a class="btn btn-secondary" href="course.jsp" padding:"10" role="button">Add Courses</a>
 	<a class="btn btn-secondary" href="Faculty.jsp" padding="10px" role="button">Add Faculty</a>
 	<a class="btn btn-secondary" href="subject.jsp" padding="10px" role="button">Add Subjects</a>
 	<a class="btn btn-secondary" href="room.jsp" padding="10px" role="button">Add Class Room</a>
 	<a class="btn btn-secondary" href="timetable.jsp" padding="10px" role="button">Create Time Table</a>
+ </div>	
 </div>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
